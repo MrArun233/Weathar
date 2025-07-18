@@ -1,0 +1,71 @@
+.show-container {
+  text-align: center;
+  padding: 2rem;
+  background: #f0f8ff;
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #ff4d6d;
+  margin-bottom: 2rem;
+  animation: pop 0.8s ease-in-out;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.wish-card {
+  background: #fff;
+  border: 2px solid #ffb3c6;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.wish-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 0, 102, 0.3);
+}
+
+.wish-text {
+  font-style: italic;
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.phone {
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

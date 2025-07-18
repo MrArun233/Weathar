@@ -1,0 +1,90 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN BOX */
+.div-show-data {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid wheat;
+  width: 70vw;
+  height: 40px;
+  border-radius: 0px 30px 0px 30px;
+  margin-top: 20px;
+  background: linear-gradient(
+    120deg,
+    rgb(32, 142, 173) 20%,
+    rgb(11, 237, 225) 40%,
+    rgb(145, 0, 249) 60%,
+    hsl(0, 0%, 60%) 80%,
+    rgb(133, 50, 130) 100%
+  );
+  overflow: hidden;
+}
+.get-btn{
+ width: 10vw;
+  height: 40px;
+  position: absolute;
+  right: 14.5%;
+  margin-top: -1.4px;
+  border-radius: 0px 30px 0px 0px;
+  border: 2px solid wheat;
+  color: purple;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  background: linear-gradient(
+    120deg,
+    rgb(32, 142, 173) 30%,
+    rgb(11, 237, 225) 80%
+  );
+  overflow: hidden;
+}
+.showData{
+  margin: 0px 0px 0px 10px;
+  border: none;
+    outline: none;
+}
+
+/* TEXT */
+.div-show-data p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 1% 0% 0% 5%;
+  font-weight: 600;
+  color: yellow;
+}
+.edit-icon,
+.delete-icon {
+  margin: -2% 0% 0% 0%;
+  cursor: pointer;
+  color: white;
+}
+.icon-div{
+  display: flex;
+  margin: 0% -90% 0% 90%;
+  gap: 14px;
+
+}
+@media (max-width: 600px) {
+  .div-show-data {
+    width: 90vw;
+    min-height: 50px;       
+    padding: 8px 12px;
+    border-radius: 0px 25px 0px 25px;  
+    overflow: hidden;
+  }
+
+  .div-show-data p {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: visible;
+    text-overflow: unset;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+}

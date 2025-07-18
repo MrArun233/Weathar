@@ -1,10 +1,13 @@
 import React from 'react'
+import FormPost from './TaskApp/FormPost'
 import './App.css'
-import ToDoWarepar from './Component/ToDoWarepar'
-
-function App() {
+import FormGet from './TaskApp/FormGet'
+import FormUpdate from './TaskApp/FormUpdate'
+const App = () => {
   return (
-    <div><ToDoWarepar/></div>
+   <div>
+      <FormPost />  {/* Iske through sab kuch hoga */}
+    </div>
   )
 }
 

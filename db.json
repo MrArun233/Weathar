@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Learn React",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Build a CRUD App",
+      "completed": false
+    },
+    {
+      "id": "ac30",
+      "inputValue": "arun"
+    },
+    {
+      "id": "b439",
+      "inputValue": "neha"
+    }
+  ]
+}
