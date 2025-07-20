@@ -17,7 +17,7 @@ const FormUpdate = ({ id, showData }) => {
   }, [showData]);
   const UpdateHandaler = (e) => {
     e.preventDefault();
-    fetch(`https://crudetaskapp-backend.onrender.com/wishes/${id}`, {
+    fetch(`https://crudetaskapp-backend.onrender.com/wishes/${id}`,{
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

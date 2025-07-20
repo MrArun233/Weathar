@@ -4,7 +4,7 @@ import { DataContext } from './Context/DataContext'
 const FormDelete = ({id,setIsDelete}) => {
   const {FormGetFetch}= useContext(DataContext)
   console.log('delete okay')
- fetch(`https://crudetaskapp-backend.onrender.com/wishes/${id}`,{
+   fetch(`https://crudetaskapp-backend.onrender.com/wishes/${id}`,{
     method: "DELETE"
   }).then((res)=>res.json())
   .then((data)=>{
