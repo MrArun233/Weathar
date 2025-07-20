@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { useState } from "react";
-import "../TaskAppCss/FormGet.css";
+import "./TaskAppCss/FormGet.css";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

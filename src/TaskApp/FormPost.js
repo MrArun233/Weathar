@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import '../TaskAppCss/FormPost.css';
+import './TaskAppCss/FormPost.css';
 import FormGet from "./FormGet";
 import { DataContext } from "../TaskApp/Context/DataContext";
 const FormPost = () => {
