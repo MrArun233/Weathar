@@ -11,7 +11,7 @@ const FormUpdate = ({ id, showData }) => {
   const [editeValue, setediteValue] = useState(false);
   const [chack, setchack] = useState(false);
   const [UpdateValue, setUpdateValue] = useState(showData);
-  const [IsDelete, setIsDelete] = useState(false)
+  const [IsDelete,  setIsDelete] = useState(false)
   useEffect(() => {
     setUpdateValue(showData);
   }, [showData]);
