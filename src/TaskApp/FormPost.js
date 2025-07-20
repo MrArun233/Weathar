@@ -9,7 +9,7 @@ const FormPost = () => {
   const [sendData, setsendData] = useState(false);
   const [inputdata, setinputdata] = useState([]);
   const FormGetFetch = () => {
-    fetch("http://localhost:5000/wishes")
+ fetch("https://crudetaskapp-backend.onrender.com/wishes")
       .then((res) => res.json())
       .then((data) => {
         console.log("data fetch succssfully", data);
@@ -24,7 +24,7 @@ const FormPost = () => {
     e.preventDefault();
     const inValue = { inputValue: inputValue };
     console.log(inputValue);
-    fetch("http://localhost:5000/wishes", {
+  fetch("https://crudetaskapp-backend.onrender.com/wishes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
