@@ -1,20 +1,19 @@
 import React from 'react';
 
 const SearchInput = ({ getWeatharDetails,searchInputRef }) => {
-  const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
+
   // console.log("API_KEY:", API_KEY); //  check if it's loading
 
-  const handleCitySearch = async (e) => {
-    e.preventDefault();
+ 
+const handleCitySearch = async (e) => {
+  e.preventDefault();
+  const searchInput = e.target.querySelector('.serach-input');
+  const cityName = searchInput.value;
 
-    const searchInput = e.target.querySelector('.serach-input'); //  fixed typo
-    const cityName = searchInput.value;
-
-  const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=2&aqi=no`;
-    console.log("entered: CityName", cityName);
-    console.log("API URL:", API_URL);
-  getWeatharDetails(API_URL)
-  }
+  const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=2&aqi=no`;
+  getWeatharDetails(API_URL);
+};
   // Gets  user's current loacation {latitude,latitude}
 
   const HandleLocationSearch=()=>{
