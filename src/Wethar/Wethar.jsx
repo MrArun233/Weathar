@@ -55,11 +55,12 @@ function Wethar() {
       sethasNoResulte(true);
     }                                                                                                                                                                                                                                                                                                                                                                                                                                         
   };
-  useEffect(()=>{
-    const defaultCity = 'India'
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+const defaultCity = 'India'
   const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${defaultCity}&days=2&aqi=no`;
   getWeatharDetails(API_URL)
-  },[]);
+}, []);
   return (
     <div className="cantainer">
       {/* {search-section} */}
