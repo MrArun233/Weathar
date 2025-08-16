@@ -1,10 +1,11 @@
 import React from 'react'
-import FormPost from './TaskApp/FormPost'
+import Wethar from './Wethar/Wethar'
 import './App.css'
 const App = () => {
+ 
   return (
    <div>
-      <FormPost />  {/* Iske through sab kuch hoga */}
+<Wethar/>
     </div>
   )
 }
