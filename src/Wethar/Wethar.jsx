@@ -4,6 +4,7 @@ import CurrentWeather from "./CurrentWeather";
 import HourlyWeatharItem from "./HourlyWeatharItem";
 import { weatherConditionMap } from "../constant";
 import NoResulteDev from "./NoResulteDev";
+import DevloperName from "./DevloperName";
 
 function Wethar() {
   const API_KEY = process.env.REACT_APP_API_KEY;
@@ -107,6 +108,7 @@ function Wethar() {
           </div>
         </div>
       )}
+      <DevloperName/>
     </div>
   );
 }

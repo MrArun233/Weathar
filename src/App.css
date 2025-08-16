@@ -21,7 +21,7 @@ body {
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  max-width: 410px;
+  max-width: 420px;
   border-radius: 10px;
   background: linear-gradient(#352163, #33143c);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -171,7 +171,17 @@ body {
 .no-results .title {
   margin: 25px 0 15px;
 }
+.devloperName{
+padding: 15px;
+display: flex;
+flex-direction: column;
+}
+.devloperName P{
 
+color:#fff;
+text-align: center;
+
+}
 /* Responsive media query code for small screen */
 @media (max-width: 624) {
   body,
