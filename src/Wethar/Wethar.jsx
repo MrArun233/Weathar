@@ -6,7 +6,7 @@ import { weatherConditionMap } from "../constant";
 import NoResulteDev from "./NoResulteDev";
 
 function Wethar() {
-const API_KEY = import.meta.env.VITE_API_KEY;
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const [currentWeathar, setCurrentWeathar] = useState({});
   const [HourlyForecast, setHourlyForecast] = useState([]);
   const [hasNoResulte, sethasNoResulte] = useState(false);
@@ -70,12 +70,11 @@ const API_KEY = import.meta.env.VITE_API_KEY;
   );
 
   // ✅ Load default city on mount
- 
-useEffect(() => {
-  const defaultCity = "India";
-  const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${defaultCity}&days=2&aqi=no`;
-  getWeatharDetails(API_URL);
-}, [API_KEY, getWeatharDetails]);
+  useEffect(() => {
+    const defaultCity = "India";
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${defaultCity}&days=2&aqi=no`;
+    getWeatharDetails(API_URL);
+  }, [API_KEY, getWeatharDetails]);
 
   return (
     <div className="cantainer">
